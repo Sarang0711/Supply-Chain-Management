@@ -1,0 +1,6 @@
+{
+    "solidity.solhintRules": {
+    
+    },
+    "solidity.compileUsingRemoteVersion": "latest"
+}
