@@ -63,11 +63,12 @@ contract SupplyChain {
         _;
     }
 
-    function addProduct(string memory _mNumber,
+    function addProduct(uint256 _ownerId,
+                        string memory _mNumber,
                         string memory _pNumber, 
                         string memory _sNumber,
-                        uint32 _cost, 
-                        uint256 _ownerId) public returns (uint256) {
+                        uint32 _cost
+                        ) public returns (uint256) {
 
             if(keccak256(abi.encodePacked(participants[_ownerId].participantType)) == 
             keccak256("Manufacturer")) {
